@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общий Веб-Блог</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}    
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Добро пожаловать в общий веб-блог!</h1>
+        <p>Площадка для обмена мыслями и идеями со всего мира</p>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="mb-4">
+                    <h2>Заголовок статьи 1</h2>
+                    <p class="text-muted">Дата: 01.01.2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat et eros varius facilisis. Phasellus sit amet dictum purus.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                </article>
+                <article class="mb-4">
+                    <h2>Заголовок статьи 2</h2>
+                    <p class="text-muted">Дата: 02.01.2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat et eros varius facilisis. Phasellus sit amet dictum purus.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                </article>
+                <article class="mb-4">
+                    <h2>Заголовок статьи 3</h2>
+                    <p class="text-muted">Дата: 03.01.2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat et eros varius facilisis. Phasellus sit amet dictum purus.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                </article>
+            </div>
+            <aside class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">О блоге</div>
+                    <div class="card-body">
+                        <p>Этот блог является платформой для общения и обмена знаниями. Каждый может поделиться своими записями и идеями.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header">Популярные статьи</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">Статья 1</a></li>
+                        <li class="list-group-item"><a href="#">Статья 2</a></li>
+                        <li class="list-group-item"><a href="#">Статья 3</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Общий Веб-Блог. Все права защищены.</p>
+    </footer>
+</body>
+</html>
